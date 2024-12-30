@@ -22,6 +22,9 @@ public class MySecurityConfig {
                 // 表單登入（即是使用帳號密碼登入）
                 .formLogin(Customizer.withDefaults())
 
+                // oauth2 社交登入
+                .oauth2Login(Customizer.withDefaults())
+
                 .build();
     }
 }
